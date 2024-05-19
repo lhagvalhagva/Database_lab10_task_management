@@ -9,6 +9,8 @@
     "build": "next build",
     "start": "next start"
   },
+
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
