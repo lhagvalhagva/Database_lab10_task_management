@@ -1,0 +1,57 @@
+/* Add your CSS styles here */
+.wrapper {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task-box {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-box li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-box li button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+}
+
+.filters span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.clear-btn {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
