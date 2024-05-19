@@ -27,6 +27,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/customer_task.js"
     ],
+    "/employee_task": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/employee_task.js"
+    ],
     "/login": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

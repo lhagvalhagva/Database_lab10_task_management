@@ -1,14 +1,22 @@
 import { useState, FormEvent } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function LoginPage() {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [userType, setUserType] = useState<"customer" | "employee">("customer");
+  const router = useRouter();
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Login with:", email, password, userType);
+    
+    if (userType === "customer") {
+      router.push("/customer_task");
+    } else {
+      router.push("/employee_task");
+    }
   };
 
   return (
